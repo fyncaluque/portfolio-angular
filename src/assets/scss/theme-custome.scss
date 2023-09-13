@@ -1,0 +1,20 @@
+// $white: #ffffff;
+$dark: #151617;
+$light: #cfd0d0;
+$primary: #ff4c60;
+$secondary: #f97b8b;
+$info: #6c6ce5;
+$success: #44d7b6;
+$warning: #f9d74c;
+$danger: #ff526f;
+
+$theme-colors: (
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+);

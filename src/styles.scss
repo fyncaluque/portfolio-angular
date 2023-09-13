@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/theme-custome.scss";
+// @import "assets/scss/theme-colors-default.scss";
+
+/* Importing Bootstrap SCSS file */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: #454360;
+  font-family: "Rubik", sans-serif;
+  background: #f9f9ff;
+  font-size: 16px;
+}
+
+.title-section {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.card-header,
+.card-body,
+.list-group-item {
+  color: #454360;
+}

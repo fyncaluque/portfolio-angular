@@ -1,0 +1,23 @@
+.line-container {
+  position: relative;
+  width: 60px;
+  height: 100%;
+}
+
+.line-vertical {
+  width: 1px;
+  height: 100%;
+}
+
+.icon-top {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  top: 10px;
+  left: 10px;
+}

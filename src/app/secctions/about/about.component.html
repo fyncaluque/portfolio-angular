@@ -1,0 +1,68 @@
+<section class="section" id="about">
+  <div class="container py-5">
+    <h2 class="fs-1 fw-bold my-4">Acerca de</h2>
+
+    <div class="card border-0 rounded-4 shadow-lg p-4 bg-transparent">
+      <div class="row row-gap-4">
+        <div
+          class="col-12 col-md-4 col-lg-3 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="/assets/image/profile.jpg"
+            alt=""
+            class="rounded-circle shadow-lg my-3 my-sm-0"
+            style="width: 120px"
+          />
+        </div>
+        <div class="col-12 col-md-8 col-lg-5 px-lg-3">
+          <h3 class="fs-4">Perfil</h3>
+          <p>
+            I am Bolby Doe, web developer from London, United Kingdom. I have
+            rich experience in web site design and building and customization,
+            also I am good at WordPress.
+          </p>
+          <button class="btn btn-primary text-white fw-semibold rounded-5 px-4">
+            Descargar CV
+            <i class="fa-solid fa-download ms-2"></i>
+          </button>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h3 class="fs-4">Habilidades</h3>
+          <!-- Hard Skills -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <app-hard-skill
+                title="Angular"
+                bgClass="bg-primary"
+                progressWidth="95"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <app-hard-skill
+                title="React"
+                bgClass="bg-info"
+                progressWidth="70"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <app-hard-skill
+                title="Bootstrap"
+                bgClass="bg-warning"
+                progressWidth="80"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <app-hard-skill
+                title="TailwindCSS"
+                bgClass="bg-success"
+                progressWidth="80"
+              />
+            </div>
+          </div>
+
+          <!-- /Hard Skills -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

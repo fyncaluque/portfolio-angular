@@ -10,7 +10,16 @@
   font-size: 36px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 0;
 }
 .subtitle {
   color: #ffd15c;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
 }

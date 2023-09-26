@@ -7,6 +7,7 @@ import { ProyectsComponent } from './secctions/proyects/proyects.component';
 import { SummaryComponent } from './secctions/summary/summary.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'summary', component: SummaryComponent },

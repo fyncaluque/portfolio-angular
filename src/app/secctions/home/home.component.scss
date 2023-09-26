@@ -3,7 +3,9 @@
 }
 
 .bg-home {
-  background: #353353;
+  background: #000;
+
+  height: 100vh;
 }
 
 .title {
@@ -16,6 +18,11 @@
   color: #ffd15c;
   margin: 0;
   margin-bottom: 1rem;
+}
+
+.info {
+  text-align: center;
+  z-index: 20;
 }
 
 @media (max-width: 576px) {

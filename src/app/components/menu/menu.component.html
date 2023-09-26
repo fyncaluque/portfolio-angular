@@ -1,27 +1,68 @@
-<nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
   <div class="container">
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarToggler"
+      [ngClass]="{ collapsed: isNavCollapsed }"
+      (click)="toggleNav()"
       aria-controls="navbarToggler"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse w-100" id="navbarToggler">
-      <a class="navbar-brand fs-1 fw-bold" href="#">FMY</a>
-      <ul class="navbar-nav w-100 justify-content-end">
+    <a class="navbar-brand fs-1 fw-bold" href="#">Dev</a>
+    <div
+      class="collapse navbar-collapse w-100"
+      [ngClass]="{ show: !isNavCollapsed }"
+      id="navbarToggler"
+    >
+      <ul class="navbar-nav w-100 justify-content-end menu">
         <li class="nav-item">
-          <a class="nav-link active" href="#home">Inicio</a>
+          <a
+            class="nav-link"
+            routerLink="home"
+            routerLinkActive="active"
+            (click)="closeNav()"
+            >Inicio</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">Acerca de</a>
+          <a
+            class="nav-link"
+            routerLink="about"
+            routerLinkActive="active"
+            (click)="closeNav()"
+            >Acerca de</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="summary"
+            routerLinkActive="active"
+            (click)="closeNav()"
+            >Resumen</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link">Resumen</a>
+          <a
+            class="nav-link"
+            routerLink="projects"
+            routerLinkActive="active"
+            (click)="closeNav()"
+            >Proyectos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="contact"
+            routerLinkActive="active"
+            (click)="closeNav()"
+            >Contacto</a
+          >
         </li>
       </ul>
     </div>

@@ -12,8 +12,9 @@ import { ParticlesComponent } from './components/particles/particles.component';
 // Sections
 import { HomeComponent } from './secctions/home/home.component';
 import { AboutComponent } from './secctions/about/about.component';
-import { SummaryComponent } from './secctions/summary/summary.component';
 import { ContactComponent } from './secctions/contact/contact.component';
+import { ProyectsComponent } from './secctions/proyects/proyects.component';
+import { SummaryComponent } from './secctions/summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactComponent } from './secctions/contact/contact.component';
     EducationComponent,
     ExperienceComponent,
     ParticlesComponent,
+    ProyectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
